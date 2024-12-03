@@ -2,19 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Django Telegram Login Widget Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-in via Telegram</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
-<h1>Telegram Auth</h1>
-<p>Change data-telegram-login and data-auth-url to your own</p>
+<body class="d-flex justify-content-center align-items-center vh-100">
 
-<script
-  async src="https://telegram.org/js/telegram-widget.js?22"
-  data-telegram-login="yoklmnyoprst_bot"
-  data-size="large"
-  data-auth-url="https://f9c1-46-34-193-62.ngrok-free.app/auth/complete/telegram/"
-  data-request-access="write">
-</script>
+  <div class="text-center">
+    <h1>Sign-in via Telegram</h1>
+    <script
+      async src="https://telegram.org/js/telegram-widget.js?22"
+      data-telegram-login="yoklmnyoprst_bot"
+      data-size="large"
+      data-auth-url="https://f9c1-46-34-193-62.ngrok-free.app/auth/complete/telegram/"
+      data-request-access="write">
+    </script>
+  </div>
 
 </body>
 </html>
